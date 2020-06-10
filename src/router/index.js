@@ -19,9 +19,14 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+    path: '/firstcomponent',
+    name: 'firstcomponent',
+    component: () => import('../components/FirstComponent.vue')
+  },
+  {
     path: '/test',
     name: 'test',
-    component: () => import('../components/FirstComponent.vue')
+    component: () => import('../components/Test.vue')
   }
 ]
 
